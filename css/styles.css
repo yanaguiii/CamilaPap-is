@@ -65,20 +65,39 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input {
 }
 
 .header__main-bar {
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 20px;
     background-color: #373736;
+    position: relative; /* Posição relativa para flexibilidade */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
-.header__logo{
-    background-color: #ffffff; /* Define a cor de fundo para branco */
-    margin:-5px;
+.header__logo {
+    background-color: #ffffff; /* Fundo branco apenas para a logo */
+    padding: 5px; /* Espaçamento ao redor do logo */
+    border-radius: 5px; /* Bordas arredondadas ao redor do logo */
+    width: 150px; /* Largura da área da logo */
+    height: 80px; /* Altura da área da logo */
+    overflow: hidden; /* Esconde qualquer conteúdo que extrapole a área definida */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative; /* Posição relativa para controle do conteúdo interno */
 }
 
 .header__logo img {
-    width: 120px;
+    width: auto; /* Largura automática para ajustar a altura conforme a proporção da imagem */
+    height: 130px; /* Altura igual a 100% do container para cobrir verticalmente */
+    object-fit: cover; /* Redimensiona a imagem para cobrir toda a área do container */
+    object-position: center; /* Centraliza a imagem dentro do container */
+    position: absolute; /* Posição absoluta para controlar a posição dentro do container */
+    top: 50%; /* Alinha o topo da imagem no meio do container */
+    left: 50%; /* Alinha a esquerda da imagem no meio do container */
+    transform: translate(-50%, -50%); /* Translada a imagem de volta para centralizar */
 }
+
 
 .header__nav {
     flex-grow: 1;
@@ -86,8 +105,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input {
 }
 
 .nav__list {
-    display: flex;
-    list-style: none;
+    display:flex;
+    list-style:none;
+    justify-content: left; /* Centraliza os itens da navegação */
+    flex-wrap: nowrap; /* Evita quebra de linha */
+    margin: 0;
+    padding: 0;
+    
 }
 
 .nav__list li {
@@ -103,6 +127,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input {
     border: 2px solid transparent; /* Define uma borda transparente inicialmente */
     border-radius: 5px; /* Adiciona um pequeno arredondamento nas bordas */
     transition: all 0.3s ease; /* Adiciona uma transição suave para a mudança de cor da borda */
+    white-space: nowrap;
 }
 
 .nav__list a:hover {
@@ -149,4 +174,162 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input {
 
 .cta-button:hover {
     background-color: #1f87c3; /* Define a cor de fundo para cinza claro ao passar o mouse */
+}
+
+.intro-section {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.intro-section__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; /* Coloca as colunas lado a lado */
+}
+
+.intro-section__col {
+    width: 48%; /* Cada coluna ocupa 48% do espaço disponível */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.intro-section__col--image {
+    /* Estilos específicos para a coluna de imagem */
+    text-align: center; /* Centraliza a imagem dentro da coluna */
+}
+
+.intro-section__col--image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços adicionais ao redor da imagem */
+}
+
+.intro-section__col--text {
+    padding: 35px 20px; /* Adiciona um espaçamento interno na coluna de texto */
+    align-self: flex-start; /* Alinha a coluna de texto no topo verticalmente */
+}
+
+.intro-section__col--text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro-section__col--text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.product-card {
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Suave aumento do tamanho do card ao passar o mouse */
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: flex; /* Centraliza a imagem no contêiner */
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 10px 0; /* Margem entre o título e outros elementos */
+    font-size: 1.2em;
+}
+
+.product-description p {
+    margin-bottom: auto; /* Empurra o texto para cima */
+    margin-top: 0; /* Remove qualquer margem superior */
+    padding: 0 10px; /* Espaço extra ao redor do texto para legibilidade */
+    flex-grow: 1; /* Permite que o texto cresça para ocupar espaço flexível */
+    overflow: hidden; /* Oculta o texto extra que ultrapassa a altura */
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.product-card li {
+    max-height: 80px;
+    list-style: none;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 7px;
+
+}
+
+.product-description button {
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #2daae1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #1a7bb7;
+}
+
+.product-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    color: #fff;
+    display: flex; /* Flexbox para centralização */
+    flex-direction: column; /* Orienta o conteúdo verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden; /* Inicialmente oculto */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transição suave para a opacidade */
+}
+
+.product-card:hover .product-description {
+    opacity: 1;
+    visibility: visible; /* Torna a descrição visível ao passar o mouse */
+}
+
+.product-card h3, .product-card p {
+    margin: 10px 0;
 }
