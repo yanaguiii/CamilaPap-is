@@ -1,0 +1,152 @@
+/* Reset básico */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco */
+    border-bottom: 2px solid #e9ecef;
+}
+
+.header__top-bar {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.header__row {
+    display: flex;
+    justify-content: center; /* Espaça as colunas uniformemente */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.header__col {
+    flex: 1; /* Cada coluna ocupa espaço igual */
+    text-align: left;
+    justify-content: center;
+    display: flex;
+}
+
+.header__col p {
+    margin: 0;
+    color: #343a40;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens da coluna à esquerda */
+}
+
+.header__col p i {
+    margin-right: 5px;
+}
+
+.header__col .phone-number {
+    display: block;
+    padding-left: 30px; /* Ajuste este valor para alinhar com o ícone */
+}
+
+.icon-text {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.icon-text i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.icon-text p {
+    margin: 0;
+    color: #343a40;
+    font-size: 0.9em;
+}
+
+.header__main-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #373736;
+}
+.header__logo{
+    background-color: #ffffff; /* Define a cor de fundo para branco */
+    margin:-5px;
+}
+
+.header__logo img {
+    width: 120px;
+}
+
+.header__nav {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__list li {
+    margin: 0 15px;
+}
+
+.nav__list a {
+    display: inline-block; /* Transforma o link em um bloco de nível inline */
+    padding: 10px 15px; /* Adiciona espaço ao redor do texto para criar o retângulo */
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid transparent; /* Define uma borda transparente inicialmente */
+    border-radius: 5px; /* Adiciona um pequeno arredondamento nas bordas */
+    transition: all 0.3s ease; /* Adiciona uma transição suave para a mudança de cor da borda */
+}
+
+.nav__list a:hover {
+    border-color: #2daae1; /* Define a cor da borda ao passar o mouse */
+    background-color: #2daae1;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header__search input {
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    outline: none;
+}
+
+.header__search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+.header__cta {
+    margin-left: 20px;
+    
+}
+
+.cta-button {
+    background-color: #2daae1; /* Define a cor de fundo para branco */
+    color: #ffffff; /* Define a cor do texto para a cor principal */
+    border: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+
+.cta-button:hover {
+    background-color: #1f87c3; /* Define a cor de fundo para cinza claro ao passar o mouse */
+}
