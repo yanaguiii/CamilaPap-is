@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Borba - TSE</title>
+    <title>Projeto Borba</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Font Awesome para ícones (incluindo a lupa) -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 
 <body>
@@ -65,12 +67,16 @@
             </div>
             <div class="intro-section__col intro-section__col--text">
                 <h2>A Empresa</h2>
-                <p>Aqui vai um texto breve que introduz a empresa e descreve o que ela faz.</p>
+                <p>
+                    Fundada em 1996, com mais de 25 anos no mercado e com sede na Rua Tamaindé, 1519 - Vila Nova Manchester,
+                    é uma empresa FOCADA na distribuição de papéis e forte atuação no ramo gráfico.
+                    Além de possuir uma vasta linha de produtos, entre eles, papéis especiais, a CAMILA PAPÉIS se destaca pela agilidade na entrega.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="product-list">
+    <section id="produtos" class="product-list">
         <div class="product-card">
 
             <h3>LINHA COLOR PLUS</h3>
@@ -85,7 +91,7 @@
                     <li>Opalina e Verge: características.</li>
                 </ul>
                 </p>
-                <button>Saiba mais</button>
+                <button class="saibaMaisbtn" data-texto="Color Plus: características. Markatto: características. Opalina e Verge: características.">Saiba mais</button>
             </div>
         </div>
         <div class="product-card">
@@ -340,8 +346,45 @@
 
 
     <footer>
-
+        <div class="footer-container text-center">
+            <!-- Seção de Informações -->
+            <div class="info-section">
+                <!-- Coluna ENDEREÇO -->
+                <div class="info-column text-center">
+                    <h5 class="info-heading">ENDEREÇO</h5>
+                    <p class="info-text"><a class="info-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/R.+Tamaindé,+1519">Rua Tamaindé, 1519 – Vila Nova Manchester – CEP: 03444-000 – São Paulo</a></p>
+                </div>
+                <!-- Coluna CONTATO (no centro) -->
+                <div class="info-column text-center">
+                    <h5 class="info-heading">CONTATO</h5>
+                    <p class="info-text">(11) 2090-2751<br>0800-0157788</p>
+                </div>
+                <!-- Coluna E-MAIL -->
+                <div class="info-column text-center">
+                    <h5 class="info-heading">E-MAIL</h5>
+                    <p class="info-text">camila@camilapapeis.com.br</p>
+                </div>
+            </div>
+    
+            <!-- Seção de Links e Direitos Autorais -->
+            <div class="footer-bottom-section">
+                <div class="footer-links">
+                    <a href="#home">HOME</a> | 
+                    <a href="#empresa">A EMPRESA</a> | 
+                    <a href="#produtos">PRODUTOS</a> | 
+                    <a href="#atendimento">ATENDIMENTO</a>
+                </div>
+                <p class="footer-copyright">
+                    Copyright 2017 © Camila | Soluções em Tecnologia
+                </p>
+            </div>
+        </div>
     </footer>
+    
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

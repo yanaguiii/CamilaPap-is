@@ -333,3 +333,114 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, input {
 .product-card h3, .product-card p {
     margin: 10px 0;
 }
+
+/* Estilos gerais para o footer */
+footer {
+    padding: 20px;
+    background-color: #373736;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal do footer */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Seção de informações (ENDEREÇO, CONTATO, E-MAIL) */
+.info-section {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas horizontalmente */
+    align-items: center; /* Alinha as colunas verticalmente no centro */
+    gap: 50px; /* Espaço entre as colunas */
+    flex-wrap: wrap; /* Permite que as colunas quebrem em linhas em telas menores */
+    margin-bottom: 20px; /* Espaço inferior entre as seções */
+}
+
+/* Colunas de informação */
+.info-column {
+    display: flex; /* Flexbox para o conteúdo interno */
+    flex-direction: column; /* Colocar conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Permite que as colunas cresçam igualmente */
+    min-height: 180px; /* Altura mínima para todas as colunas */
+}
+
+/* Título das colunas de informação */
+.info-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #373736; /* Cor do título (para contraste) */
+}
+
+/* Texto dentro das colunas de informação */
+.info-text {
+    font-size: 1rem;
+    color: #333; /* Cor do texto (para contraste) */
+}
+
+/* Estilo para links dentro das colunas de informação */
+.info-link {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #1a1a80; /* Azul escuro suave */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Mudança de cor ao passar o mouse sobre os links */
+.info-link:hover {
+    color: #ff6600; /* Cor laranja ao passar o mouse */
+}
+
+/* Seção inferior do footer (links e direitos autorais) */
+.footer-bottom-section {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+/* Links de navegação no rodapé */
+.footer-links a {
+    color: #2daae1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+}
+
+/* Texto de direitos autorais */
+.footer-copyright {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-column {
+        flex: 1 1 100%;
+        max-width: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
