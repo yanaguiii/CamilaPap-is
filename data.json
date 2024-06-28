@@ -1,0 +1,177 @@
+[
+    {
+        "title": "LINHA COLOR PLUS",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 1",
+        "description": {
+            "type": "list",
+            "content": [
+                "Color Plus: características.",
+                "Markatto: características.",
+                "Opalina e Verge: características."
+            ]
+        },
+        "buttonText": "Saiba mais",
+        "buttonDataTexto": "Color Plus: características. Markatto: características. Opalina e Verge: características."
+    },
+    {
+        "title": "OFF-SET BLACK",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 2",
+        "description": {
+            "type": "text",
+            "content": "Essa nova linha de off-set está disponível nas gramaturas: 80g, 120g, 180g, 240g e 320g, possibilitando diversas aplicações, de revestimentos até embalagens e aceita todos os tipos de impressão."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "CARTOLINA",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 3",
+        "description": {
+            "type": "text",
+            "content": "Cartolina: Linha FCard - nos formato 50x66cm, 55x73cm e 66x96cm A variedade de cores, gramaturas contribuem ainda mais na hora de criar. Esta linha é altamente indicada para trabalhos escolares, cartonagem, encadernações, artísticos, entre outras técnicas."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "COUCHÊ",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 4",
+        "description": {
+            "type": "text",
+            "content": "Couchê: Papel revestido que possibilita um resultado com brilho e mais vida às cores impressas. Ele muito utilizado em cartões de visita, mini cartões, tags, folders, cartazes, pastas, revistas e catálogos. Pode ser encontrado nas seguintes gramaturas: 80gr, 90gr, 120gr, 150gr, 250gr, 300gr."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "OFF-SET",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 5",
+        "description": {
+            "type": "text",
+            "content": "Off-set: É um papel não revestido, ou seja, meio poroso, muito usado nos panfletos de rua, miolo de livros, memorandos, receituários, notas fiscais. A principal vantagem é que é o melhor para escrita, pois por ser poroso, absorve bem a tinta. Existe nas gramaturas: 50gr a de 300gr."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "CARTÃO - DUPLEX E TRIPLEX",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 6",
+        "description": {
+            "type": "text",
+            "content": "Papel Cartão: papel espesso, rígido e compacto, muito utilizado para confecção de caixas e embalagens de alimentos, cosméticos, medicamentos, bebidas e capas de livros. É biodegradável e 100% reciclável. - Duplex: ideal para embalagens que necessitam de resistência e qualidade de impressão. - Triplex: indicado para embalagens mais leves e resistentes. Utilizado em embalagens para os segmentos alimentícios de higiene pessoal e limpeza, cosmético e mercados editorial e promocional."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "KRAFT",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 7",
+        "description": {
+            "type": "text",
+            "content": "Kraft: É um papel mais resistente e usado na indústria. Sua versatilidade permite que ele seja aplicado na fabricação de envelopes, sacolas, caixas e também com acabamentos específicos como laminado de alumínio."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "ECO MILLENNIUM",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 8",
+        "description": {
+            "type": "text",
+            "content": "Eco Millennium: É um papel offset reciclado para impressões em geral como cadernos, agendas, blocos, malas diretas."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "PAPELÃO CINZA E PARANÁ",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 9",
+        "description": {
+            "type": "text",
+            "content": "Ideal para quebra-cabeça, caixas, capa dura de cadernos e agendas."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "AUTO COPIATIVO",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 10",
+        "description": {
+            "type": "text",
+            "content": "Autocopiativo: Os papéis autocopiativos são utilizados para obtenção de cópias simultâneas ao original sem necessidade do uso de Superbond entre as vias. O sistema permite a impressão de até 5 vias além do original."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "ADESIVO",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 11",
+        "description": {
+            "type": "text",
+            "content": "Adesivo: É ideal para superfícies lisas para uma boa aderência sem descolar."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "OFF-SET BOBINA",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 12",
+        "description": {
+            "type": "text",
+            "content": "Bobinas:"
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "CARBONO",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 13",
+        "description": {
+            "type": "text",
+            "content": "CARBONO: Também chamado de papel químico, é um tipo de papel dotado num dos lados de uma camada de tinta ou pigmento transferível, geralmente por contato. Qualquer coisa que colida com o lado oposto deste papel faz a tinta transferir."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "ENVELOPES",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 14",
+        "description": {
+            "type": "text",
+            "content": "Envelopes: É um papel em formato específico, utilizado para o envio de cartas, documentos, convites. Os formatos mais usados são: - Ofício: Papel offset: 75g ou 90g; Tamanhos: 72x108mm, 114x162mm ou 14x229mm - Saco: Kraft ouro 80g, Kraft natural 80g, Kraft puro 110g. Papel Offset branco 90g e 110g; Tamanhos: 10x170mm, 125x176mm, 162x229mm, 185x248mm, 176x250mm, 200x280mm, 229x324mm, 240x340mm, 250x353mm, 265x360mm, 310x410mm ou 370x470mm."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "CAPA AG",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 15",
+        "description": {
+            "type": "text",
+            "content": "Capa AG: Fabricado na mistura de aparos e celulose. Papel destinado, principalmente, para capa de blocos, serviços gráficos sem impressão de fotos e serviços artesanais em geral."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "SAMAGLOSS",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 16",
+        "description": {
+            "type": "text",
+            "content": "SamaGloss: É um papel kraft com brilho em um dos lados, que é resistente para confecção de embalagens, como pacotes para os correios."
+        },
+        "buttonText": "Saiba mais"
+    },
+    {
+        "title": "SUPER BOND",
+        "image": "img/300x300.png",
+        "alt": "Imagem do Produto 17",
+        "description": {
+            "type": "text",
+            "content": "F Bond: Semelhante ao off-set, fabricado com celulose branqueada de fibras curtas, colorido na massa e de superfície lisa. Disponível nas cores: azul, rosa, canário e verde, no formato 66×96 cm, nas gramaturas de 50 e 75 g/m2. Indicado para a confecção de talonários, cadernos, blocos pedidos, formulários, envelopes, impressos em geral."
+        },
+        "buttonText": "Saiba mais"
+    }
+]
