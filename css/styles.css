@@ -354,38 +354,45 @@ footer {
     display: flex;
     justify-content: center; /* Centraliza as colunas horizontalmente */
     align-items: center; /* Alinha as colunas verticalmente no centro */
-    gap: 50px; /* Espaço entre as colunas */
-    flex-wrap: wrap; /* Permite que as colunas quebrem em linhas em telas menores */
-    margin-bottom: 20px; /* Espaço inferior entre as seções */
+    gap: 100px; /* Espaço entre as colunas */
+     /* Permite que as colunas quebrem em linhas em telas menores */
+    margin-bottom: 30px; /* Espaço inferior entre as seções */
 }
 
 /* Colunas de informação */
-.info-column {
-    display: flex; /* Flexbox para o conteúdo interno */
-    flex-direction: column; /* Colocar conteúdo em coluna */
-    justify-content: center; /* Centraliza verticalmente o conteúdo */
-    align-items: center; /* Centraliza horizontalmente o conteúdo */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Permite que as colunas cresçam igualmente */
-    min-height: 180px; /* Altura mínima para todas as colunas */
-}
+    .info-column {
+        display: flex; /* Flexbox para o conteúdo interno */
+        flex-direction: column; /* Colocar conteúdo em coluna */
+        justify-content: center; /* Centraliza verticalmente o conteúdo */
+        align-items: center; /* Centraliza horizontalmente o conteúdo */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 50px; 
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 0 0 auto; /* Permite que as colunas cresçam igualmente */
+        height: 60px;
+        width:300px;
+    }
 
-/* Título das colunas de informação */
-.info-heading {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #373736; /* Cor do título (para contraste) */
-}
+    .info-text {
+        font-size: 1rem;
+        display: flex; /* Utiliza flexbox para o texto e ícone */
+        align-items: center; /* Centraliza verticalmente o ícone e o texto */
+        justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+        color: #333; /* Cor do texto */
+    }
 
-/* Texto dentro das colunas de informação */
-.info-text {
-    font-size: 1rem;
-    color: #333; /* Cor do texto (para contraste) */
-}
+    .info-text p {
+        margin: 0; /* Remove margem padrão do parágrafo */
+    }
+
+    .info-text i {
+        margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+        font-size: 1.2em; /* Tamanho do ícone */
+        color: #373736; /* Cor do ícone */
+    }
+
 
 /* Estilo para links dentro das colunas de informação */
 .info-link {
