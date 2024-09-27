@@ -57,6 +57,42 @@ function createProductCard(product) {
     return productCard;
 }
 
+function createFilterButtons(products) {
+    const filterList = document.getElementById('filterList');
+
+    // Criar um botão para "Todos" os produtos
+    const allButton = document.createElement('li');
+    const allButtonElement = document.createElement('button');
+    allButtonElement.textContent = 'Todos';
+    allButtonElement.onclick = () => filterProducts('all');
+    allButton.appendChild(allButtonElement);
+    filterList.appendChild(allButton);
+
+    // Criar botões de filtros individuais para cada categoria de produto
+    products.forEach(product => {
+        const filterItem = document.createElement('li');
+        const filterButton = document.createElement('button');
+        filterButton.textContent = product.title;
+        filterButton.onclick = () => filterProducts(product.title);
+        filterItem.appendChild(filterButton);
+        filterList.appendChild(filterItem);
+    });
+}
+
+// Função para filtrar produtos com base no título
+function filterProducts(category) {
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+        // Mostrar todos os produtos se a categoria for "all"
+        if (category === 'all' || product.querySelector('h3').textContent === category) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
 async function loadProducts() {
     const products = await fetchProducts();
     const productsSection = document.getElementById('produtos');
@@ -64,9 +100,10 @@ async function loadProducts() {
         const productCard = createProductCard(product);
         productsSection.appendChild(productCard);
     });
+
+    createFilterButtons(products);
 }
 
-document.addEventListener('DOMContentLoaded', loadProducts);
 
 
 document.addEventListener('DOMContentLoaded', function() {
